@@ -58,6 +58,7 @@ var TextHighlightRules = acequire("./text_highlight_rules").TextHighlightRules;
 var JavaScriptHighlightRules = function(options) {
     var keywordMapper = this.createKeywordMapper({
         "variable.language":
+            "alpha|blue|brightness|color|green|hue|lerpColor|red|saturation|background|clear|colorMode|fill|noFill|noStroke|stroke|preload|setup|draw|remove|noLoop|loop|push|pop|redraw|append|arrayCopy|concat|reverse|shorten|shuffle|sort|splice|subset|float|int|str|boolean|byte|char|unchar|hex|unhex|join|match|matchAll|nf|nfc|nfp|nfs|split|splitTokens|trim|save|cursor|frameRate|noCursor|fullscreen|devicePixelScaling|getURL|getURLPath|getURLParams|createImage|loadImage|image|tint|noTint|imageMode|blend|copy|filter|get|loadPixels|set|updatePixels|setMoveThreshold|onDeviceMove|onDeviceTurn|loadJSON|loadStrings|loadTable|loadXML|httpGet|httpPost|httpDo|keyPressed|keyReleased|keyTyped|keyIsDown|mouseMoved|mouseDragged|mousePressed|mouseReleased|mouseClicked|mouseWheel|day|hour|minute|millis|month|second|year|touchStarted|touchMoved|touchEnded|createVector|abs|ceil|constrain|dist|exp|floor|lerp|log|mag|map|max|min|norm|pow|round|sq|sqrt|noise|noiseDetail|noiseSeed|randomSeed|random|randomGaussian|acos|asin|atan|atan2|cos|sin|tan|degrees|radians|angleMode|print|createCanvas|resizeCanvas|noCanvas|createGraphics|blendMode|arc|ellipse|line|point|quad|rect|triangle|ellipseMode|noSmooth|rectMode|smooth|strokeCap|strokeJoin|strokeWeight|bezier|bezierPoint|bezierTangent|curve|curveTightness|curvePoint|curveTangent|beginContour|beginShape|bezierVertex|curveVertex|endContour|endShape|quadraticVertex|vertex|applyMatrix|resetMatrix|rotate|scale|shearX|shearY|translate|textAlign|textLeading|textSize|textStyle|textWidth|text|textFont" + 
             "Array|Boolean|Date|Function|Iterator|Number|Object|RegExp|String|Proxy|"  + // Constructors
             "Namespace|QName|XML|XMLList|"                                             + // E4X
             "ArrayBuffer|Float32Array|Float64Array|Int16Array|Int32Array|Int8Array|"   +
@@ -69,6 +70,8 @@ var JavaScriptHighlightRules = function(options) {
             "JSON|Math|"                                                               + // Other
             "this|arguments|prototype|window|document"                                 , // Pseudo
         "keyword":
+            "frameCount|focused|displayWidth|displayHeight|windowWidth|windowHeight|windowResized|width|height|deviceOrientation|accelerationX|accelerationY|accelerationZ|pAccelerationX|pAccelerationY|pAccelerationZ|keyIsPressed|key|keyCode|mouseX|mouseY|pmouseX|pmouseY|winMouseX|winMouseY|pwinMouseX|pwinMouseY|mouseButton|mouseIsPressed|touchX|touchY|ptouchX|ptouchY|pixels[]|touches[]|touchIsDown" + 
+            "HALF_PI|PI|QUARTER_PI|TAU|TWO_PI" + 
             "const|yield|import|get|set|" +
             "break|case|catch|continue|default|delete|do|else|finally|for|function|" +
             "if|in|instanceof|new|return|switch|throw|try|typeof|let|var|while|with|debugger|" +
